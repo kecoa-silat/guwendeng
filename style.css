@@ -24,18 +24,15 @@
       align-items: center;
     }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    
+    
     .logo-container {
       display: flex;
       align-items: center;
     }
     
     .logo-img {
-      height: 50px;
+      height: 75px; /* Sesuaikan ukuran logomu */
     }
 
     nav ul {
