@@ -1,26 +1,26 @@
   const products = [
       {
-        name: "Produk 1",
-        img: "images/lumpia.jpg",
-        price: "Rp 20.000",
+        name: "Lumpia Semarang",
+        img: "lumpia.png",
+        price: "Rp 14.000/Pcs",
         desc: "Deskripsi barang."
       },
       {
-        name: "Produk 2",
-        img: "images/risol.jpg",
-        price: "Rp 18.000",
+        name: "Kekian Goreng",
+        img: "kekian.png",
+        price: "Rp 60.000/Box",
         desc: "Deskripsi barang."
       },
       {
-        name: "Produk 3",
-        img: "images/bakcang.jpg",
-        price: "Rp 22.000",
+        name: "Bakcang",
+        img: "bakcan.png",
+        price: "Rp 23.000/Pcs",
         desc: "Deskripsi barang."
       },
       {
-        name: "Produk 4",
-        img: "images/tahuisi.jpg",
-        price: "Rp 7.000",
+        name: "Tahu Isi",
+        img: "tahu isi.jpg",
+        price: "Rp 7.000/Pcs",
         desc: "Deskripsi barang."
       }
     ];
