@@ -27,9 +27,13 @@
 
     .logo-container {
       display: flex;
-      align-items: left;
-          
+      align-items: center;
     }
+    
+    .logo-img {
+      height: 75px;
+    }
+
     nav ul {
       display: flex;
       list-style: none;
