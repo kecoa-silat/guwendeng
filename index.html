@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Dapoer Bos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #1c1c1c, #252525);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f39c12;
+      letter-spacing: 3px;
+      margin-bottom: 1rem;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #ecf0f1;
+      opacity: 0.9;
+    }
+
+    .hero button {
+      background: linear-gradient(to right, #f39c12, #e67e22);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: transform 0.4s, box-shadow 0.4s, opacity 0.4s;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      margin: 10px;
+    }
+
+    .hero button:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+      opacity: 0.95;
+    }
+
+    .background-circles {
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(243, 156, 18, 0.3), rgba(231, 76, 60, 0.1));
+      border-radius: 50%;
+      animation: float 6s infinite alternate ease-in-out;
+    }
+
+    .background-circles:nth-child(2) {
+      top: auto;
+      bottom: -100px;
+      left: auto;
+      right: -100px;
+      background: radial-gradient(circle, rgba(46, 204, 113, 0.3), rgba(39, 174, 96, 0.1));
+      animation-delay: 2s;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(20px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-circles"></div>
+  <div class="background-circles"></div>
+
+  <section class="hero">
+    <h1>Welcome to Dapoer Bos</h1>
+    <p>Menu yang enak dan higienis sesuai selera para bos!</p>
+    <button onclick="navigateToMenu()">Lihat Selengkapnya</button>
+  </section>
+
+  <script>
+    function navigateToMenu() {
+      window.location.href = "index.html";
+    }
+
+  </script>
+</body>
+
+</html>
